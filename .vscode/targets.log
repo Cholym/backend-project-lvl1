@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon May 16 11:39:11 2022
+# Make data base, printed on Mon May 16 12:07:43 2022
 
 # Variables
 
@@ -55,7 +55,7 @@ PATH = /home/ochab/.vscode-server/bin/da15b6fd3ef856477bf6f4fb29ba1b7af717770d/b
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-ad69a766-58c8-40c9-81ea-182539efa0e5.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-2e140ca4-b8a0-4a6c-b9d9-54e9337f06e4.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -222,6 +222,6 @@ install:
 # strcache performance: lookups = 27 / hit rate = 25%
 # hash-table stats:
 # Load=20/8192=0%, Rehash=0, Collisions=1/27=4%
-# Finished Make data base on Mon May 16 11:39:11 2022
+# Finished Make data base on Mon May 16 12:07:43 2022
 
  
