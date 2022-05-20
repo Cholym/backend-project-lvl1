@@ -3,4 +3,4 @@
 ### Codeclimate badge Maintainability:
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 ### Status Badge:
-[![hexlet-check](https://github.com/Cholym/backend-project-lvl1/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Cholym/backend-project-lvl1/actions/workflows/hexlet-check.yml)
+[![ESLint](https://github.com/Cholym/backend-project-lvl1/actions/workflows/eslint.yml/badge.svg)](https://github.com/Cholym/backend-project-lvl1/actions/workflows/eslint.yml)
