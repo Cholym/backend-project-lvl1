@@ -14,7 +14,8 @@
   ],
   "description": "[![Actions Status](https://github.com/Cholym/backend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Cholym/backend-project-lvl1/actions)",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even" : "bin/brain-even.js"
   },
   "main": "index.js",
   "scripts": {
