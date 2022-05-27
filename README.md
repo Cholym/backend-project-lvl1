@@ -8,3 +8,5 @@
 https://asciinema.org/a/497098
 ### Demo brain-calc:
 https://asciinema.org/a/497569
+### Demo brain-gcd:
+https://asciinema.org/a/497576
