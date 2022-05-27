@@ -6,8 +6,9 @@ const gcdGame = () => {
   const answers = [];
 
   for (let numberTries = 0; numberTries !== 3; numberTries += 1) {
-    let number1 = randomNumber();
-    let number2 = randomNumber();
+    const maxNumberValue = 100;
+    let number1 = randomNumber(1, maxNumberValue);
+    let number2 = randomNumber(1, maxNumberValue);
     questions.push(`${number1} ${number2}`);
     const answer = (num1, num2) => {
       for (let diviser = Math.min(num1, num2); diviser !== 0; diviser -= 1) {

@@ -4,9 +4,8 @@ const gameRule = (str) => {
   console.log(str);
 };
 
-const randomNumber = () => {
-  const maxValue = 100;
-  return Math.floor(Math.random() * maxValue);
+const randomNumber = (minValue, maxValue) => {
+  return Math.floor(minValue + Math.random() * (maxValue + 1 - minValue));
 };
 
 const gameLogic = (rule, questions, answers) => {
@@ -17,7 +16,14 @@ const gameLogic = (rule, questions, answers) => {
   for (let timesPlay = 0; timesPlay !== 3; timesPlay += 1) {
     console.log('Question: ', questions[timesPlay]);
     const userAnswer = readlineSync.question('Your answer: ');
-    if (Number(userAnswer) === answers[timesPlay]) {
+    const temp = Number(userAnswer);
+    const userAnswerToCompare = () => {
+      if (Number.isInteger(temp) === false) {
+        return userAnswer;
+      } 
+      return Number(userAnswer);
+    }
+    if (userAnswerToCompare() === answers[timesPlay]) {
       console.log('Correct!');
     } else {
       return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answers[timesPlay]}'. Let's try again, ${userName}!`);

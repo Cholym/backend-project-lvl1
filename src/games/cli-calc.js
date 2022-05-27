@@ -10,8 +10,9 @@ const playGame = () => {
 
   for (let numberTries = 0; numberTries !== 3; numberTries += 1) {
     randomCalculationSigns.push(mathSymbols.charAt(Math.floor(Math.random() * mathSymbols.length)));
-    let number1 = randomNumber();
-    let number2 = randomNumber();
+    const maxNumberValue = 100;
+    let number1 = randomNumber(0, maxNumberValue);
+    let number2 = randomNumber(0, maxNumberValue);
     questions.push(`${number1} ${randomCalculationSigns[numberTries]} ${number2}`);
     const calcSign = randomCalculationSigns[numberTries];
     const answer = (num1, sign, num2) => {
