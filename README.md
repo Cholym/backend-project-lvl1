@@ -1,16 +1,30 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Cholym/backend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Cholym/backend-project-lvl1/actions)
-### Codeclimate badge Maintainability:
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
-### Status Badge:
 [![ESLint](https://github.com/Cholym/backend-project-lvl1/actions/workflows/eslint.yml/badge.svg)](https://github.com/Cholym/backend-project-lvl1/actions/workflows/eslint.yml)
-### Demo brain-even:
-https://asciinema.org/a/497098
-### Demo brain-calc:
-https://asciinema.org/a/497569
-### Demo brain-gcd:
-https://asciinema.org/a/497576
-### Demo brain-progression:
-https://asciinema.org/a/497598
-### Demo brain-prime:
-https://asciinema.org/a/497600
+
+### Welcome to simple Braingames!
+In this project you can check or train your calculation skill.
+## Get started
+Clone repository or use `make install` command.
+**You can follow installation from the first game demo**
+## №1 Parity
+Answer "yes" if the number is even, othervise answer "no".
+`brain-even` starts the game.
+Enjoy demo: https://asciinema.org/a/497098
+## №2 Calculator
+Calculate the result of the expression.
+`brain-calc` starts the game.
+Enjoy demo: https://asciinema.org/a/497569
+## №3 Greatest Divider
+Find the greatest common divisor of given numbers.
+`brain-gcd` starts the game.
+Enjoy demo: https://asciinema.org/a/497576
+## №4 Progression
+Find the greatest common divisor of given numbers.
+`brain-progression` starts the game.
+Enjoy demo: https://asciinema.org/a/497598
+## №5 Prime Or Not
+Answer "yes" if given number is prime, otherwise answer "no".
+`brain-prime` starts the game.
+Enjoy demo: https://asciinema.org/a/497600
