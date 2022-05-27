@@ -10,14 +10,14 @@ const gcdGame = () => {
     let number1 = randomNumber(1, maxNumberValue);
     let number2 = randomNumber(1, maxNumberValue);
     questions.push(`${number1} ${number2}`);
-    const answer = (num1, num2) => {
-      for (let diviser = Math.min(num1, num2); diviser !== 0; diviser -= 1) {
-        if (num1 % diviser === 0 && num2 % diviser === 0) {
-            return diviser;
-        }
+    let answer;
+    for (let diviser = Math.min(number1, number2); diviser !== 0; diviser -= 1) {
+      if (number1 % diviser === 0 && number2 % diviser === 0) {
+        answer = diviser;
+        break;
       }
     }
-    answers.push(answer(number1, number2));
+    answers.push(answer);
     number1 = 0;
     number2 = 0;
   }

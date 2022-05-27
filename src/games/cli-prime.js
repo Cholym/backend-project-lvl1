@@ -10,7 +10,7 @@ const primeGame = () => {
     let countDividers = 0;
     for (let ifDivider = 1; ifDivider === questions[numberTries]; ifDivider += 1) {
       if (questions[numberTries] % ifDivider === 0) {
-          countDividers += 1;
+        countDividers += 1;
       }
     }
     const correctAnswer = countDividers === 2 ? 'yes' : 'no';

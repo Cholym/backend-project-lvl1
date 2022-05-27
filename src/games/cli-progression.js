@@ -10,15 +10,14 @@ const progressionGame = () => {
     const maxDifferenceValue = 10;
     let number = randomNumber(0, maxNumberValue);
     let difference = randomNumber(1, maxDifferenceValue);
-    let question = [];
+    const question = [];
     for (let nextNumber = number; question.length < 10; nextNumber += difference) {
       question.push(nextNumber);
     }
     let indexOfHiddenNumber = randomNumber(0, question.length);
-    let hiddenNumber = question[indexOfHiddenNumber]; 
+    const hiddenNumber = question[indexOfHiddenNumber];
     question[indexOfHiddenNumber] = '..';
     questions.push(question.join(' '));
-    
     const answer = hiddenNumber;
     answers.push(answer);
     number = 0;

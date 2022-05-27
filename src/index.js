@@ -4,9 +4,7 @@ const gameRule = (str) => {
   console.log(str);
 };
 
-const randomNumber = (minValue, maxValue) => {
-  return Math.floor(minValue + Math.random() * (maxValue + 1 - minValue));
-};
+const randomNumber = (min, max) => Math.floor(min + Math.random() * (max + 1 - min));
 
 const gameLogic = (rule, questions, answers) => {
   console.log('Welcome to the Brain Games!');
@@ -20,9 +18,9 @@ const gameLogic = (rule, questions, answers) => {
     const userAnswerToCompare = () => {
       if (Number.isInteger(temp) === false) {
         return userAnswer;
-      } 
+      }
       return Number(userAnswer);
-    }
+    };
     if (userAnswerToCompare() === answers[timesPlay]) {
       console.log('Correct!');
     } else {
