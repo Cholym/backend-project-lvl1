@@ -6,3 +6,5 @@
 [![ESLint](https://github.com/Cholym/backend-project-lvl1/actions/workflows/eslint.yml/badge.svg)](https://github.com/Cholym/backend-project-lvl1/actions/workflows/eslint.yml)
 ### Demo brain-even:
 https://asciinema.org/a/497098
+### Demo brain-calc:
+https://asciinema.org/a/497569
