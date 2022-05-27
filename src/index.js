@@ -12,7 +12,7 @@ const gameLogic = (rule, questions, answers) => {
   console.log('Hello, %s!', userName);
   gameRule(rule);
   for (let timesPlay = 0; timesPlay !== 3; timesPlay += 1) {
-    console.log('Question: ', questions[timesPlay]);
+    console.log('Question:', questions[timesPlay]);
     const userAnswer = readlineSync.question('Your answer: ');
     const temp = Number(userAnswer);
     const userAnswerToCompare = () => {
