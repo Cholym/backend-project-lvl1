@@ -15,7 +15,7 @@ const playGame = () => {
     for (let nextNumber = number; question.length < 10; nextNumber += difference) {
       question.push(nextNumber);
     }
-    let indexOfHiddenNumber = generateRandomNumber(0, question.length);
+    let indexOfHiddenNumber = generateRandomNumber(0, question.length - 1);
     const hiddenNumber = question[indexOfHiddenNumber];
     question[indexOfHiddenNumber] = '..';
     pairQuestionAnswer.push(question.join(' '));
