@@ -8,14 +8,14 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon May 23 17:22:06 2022
+# Make data base, printed on Sat May 28 17:02:58 2022
 
 # Variables
 
 # environment
 LC_ALL = C
 # environment
-WSLENV = ELECTRON_RUN_AS_NODE/w:
+WSLENV = VSCODE_WSL_EXT_LOCATION/up
 # environment
 VSCODE_CWD = /mnt/c/Users/Dodo/AppData/Local/Programs/Microsoft VS Code
 # default
@@ -85,13 +85,13 @@ SHELL = /bin/sh
 # default
 MAKECMDGOALS := all
 # environment
-SHLVL = 1
+SHLVL = 0
 # environment
 MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = /home/ochab/.vscode-server/bin/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/bin/remote-cli:/home/ochab/.asdf/shims:/home/ochab/.asdf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu_2004.4.4.0_x64__79rhkp1fndgsc:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Common Files/Autodesk Shared/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Cloudflare/Cloudflare WARP/:/mnt/c/Users/Dodo/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Dodo/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/Dodo/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin
+PATH = /home/ochab/.vscode-server/bin/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/bin/remote-cli:/home/ochab/.asdf/shims:/home/ochab/.asdf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Common Files/Autodesk Shared/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Cloudflare/Cloudflare WARP/:/mnt/c/Users/Dodo/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Dodo/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/Dodo/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin
 # default
 MAKEFILES := 
 # environment
@@ -105,9 +105,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # automatic
 ?F = $(notdir $?)
 # environment
-NAME = Code
-# environment
-VSCODE_SERVER_TAR = /mnt/c/Users/Dodo/AppData/Local/Temp/vscode-remote-wsl/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/vscode-server-stable-linux-x64.tar.gz
+NAME = DESKTOP-E6I83KG
 # environment
 HOSTTYPE = x86_64
 # environment
@@ -115,7 +113,7 @@ LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:
 # automatic
 +F = $(notdir $+)
 # environment
-WSL_INTEROP = /run/WSL/9_interop
+WSL_INTEROP = /run/WSL/39_interop
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
@@ -133,9 +131,9 @@ MAKE_VERSION := 4.3
 # environment
 VSCODE_EXTHOST_WILL_SEND_SOCKET = true
 # environment
-_ = /mnt/c/Users/Dodo/AppData/Local/Programs/Microsoft VS Code/bin/code
+_ = /home/ochab/.vscode-server/bin/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/node
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-b074b0ac-fb02-4556-affb-46dfebe642b9.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-e9c4d971-f1c6-40f4-9a9a-7352a7f3e04c.sock
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -153,10 +151,9 @@ WSL_DISTRO_NAME = Ubuntu
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
 # variable set hash-table stats:
-# Load=70/1024=7%, Rehash=0, Collisions=2/100=2%
+# Load=69/1024=7%, Rehash=0, Collisions=2/99=2%
 
 # Pattern-specific Variable Values
- 
 
 # No pattern-specific variable values.
 
@@ -182,15 +179,14 @@ brain-games:
 lint:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
- 
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 11):
+#  recipe to execute (from 'Makefile', line 20):
 	npx eslint .
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-20 12:19:08.8537949
+#  Last modified 2022-05-27 11:00:46.6764935
 #  File has been updated.
 #  Successfully updated.
 
@@ -211,30 +207,51 @@ publish:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 8):
+#  recipe to execute (from 'Makefile', line 17):
 	npm publish --dry-run
+
+brain-progression:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 14):
+	node bin/brain-progression.js
+
+brain-even:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 8):
+	node bin/brain-even.js
 
 install:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 2):
-	npm install
+	npm ci
+
+brain-calc:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 11):
+	node bin/brain-calc.js
 
 # files hash-table stats:
-# Load=8/1024=1%, Rehash=0, Collisions=0/18=0%
+# Load=11/1024=1%, Rehash=0, Collisions=0/21=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 23 / storage = 210 B / avg = 9 B
-# current buf: size = 8162 B / used = 210 B / count = 23 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 26 / storage = 250 B / avg = 9 B
+# current buf: size = 8162 B / used = 250 B / count = 26 / avg = 9 B
 
-# strcache performance: lookups = 31 / hit rate = 25%
+# strcache performance: lookups = 37 / hit rate = 29%
 # hash-table stats:
-# Load=23/8192=0%, Rehash=0, Collisions=0/31=0%
-# Finished Make data base on Mon May 23 17:22:06 2022
+# Load=26/8192=0%, Rehash=0, Collisions=0/37=0%
+# Finished Make data base on Sat May 28 17:02:58 2022
 
  

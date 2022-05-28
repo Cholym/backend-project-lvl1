@@ -1,1 +1,1 @@
-{"buildTargets":["brain-games","install","lint","publish"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
+{"buildTargets":["brain-calc","brain-even","brain-games","brain-progression","install","lint","publish"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
