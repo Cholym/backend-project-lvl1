@@ -11,20 +11,20 @@ Clone repository or use `make install` command.
 ## №1 Parity
 Answer "yes" if the number is even, othervise answer "no".
 `brain-even` starts the game.
-Enjoy demo: https://asciinema.org/a/497098
+[![asciicast](https://asciinema.org/a/497098.svg)](https://asciinema.org/a/497098)
 ## №2 Calculator
 Calculate the result of the expression.
 `brain-calc` starts the game.
-Enjoy demo: https://asciinema.org/a/497569
+[![asciicast](https://asciinema.org/a/497569.svg)](https://asciinema.org/a/497569)
 ## №3 Greatest Divider
 Find the greatest common divisor of given numbers.
 `brain-gcd` starts the game.
-Enjoy demo: https://asciinema.org/a/497576
+[![asciicast](https://asciinema.org/a/497576.svg)](https://asciinema.org/a/497576)
 ## №4 Progression
 Find the greatest common divisor of given numbers.
 `brain-progression` starts the game.
-Enjoy demo: https://asciinema.org/a/497598
+[![asciicast](https://asciinema.org/a/497598.svg)](https://asciinema.org/a/497598)
 ## №5 Prime Or Not
 Answer "yes" if given number is prime, otherwise answer "no".
 `brain-prime` starts the game.
-Enjoy demo: https://asciinema.org/a/497600
+[![asciicast](https://asciinema.org/a/497600.svg)](https://asciinema.org/a/497600)
