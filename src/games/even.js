@@ -1,17 +1,20 @@
-import gameLogic from '../index.js';
+import { gameLogic, timesPlayToWin } from '../index.js';
 import generateRandomNumber from '../randomNumber.js';
 
 const playGame = () => {
   const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
   const questionsAndAnswers = [];
-  for (let numberTries = 0; numberTries !== 3; numberTries += 1) {
+  for (let numberTries = 0; numberTries !== timesPlayToWin; numberTries += 1) {
+    const minNumber = 1;
     const maxNumberValue = 100;
-    const minNumber = 0;
-    const pairQuestionAnswer = [];
-    pairQuestionAnswer.push(generateRandomNumber(minNumber, maxNumberValue));
-    const correctAnswer = pairQuestionAnswer[0] % 2 === 0 ? 'yes' : 'no';
-    pairQuestionAnswer.push(correctAnswer);
-    questionsAndAnswers.push(pairQuestionAnswer);
+    const question = generateRandomNumber(minNumber, maxNumberValue);
+    const isEven = (number) => (number % 2 === 0);
+    const check = (number) => {
+      const result = isEven(number) ? 'yes' : 'no';
+      return result;
+    };
+    const correctAnswer = check(question);
+    questionsAndAnswers.push([question, correctAnswer]);
   }
   gameLogic(rule, questionsAndAnswers);
 };

@@ -1,42 +1,34 @@
-import gameLogic from '../index.js';
+import { gameLogic, timesPlayToWin } from '../index.js';
 import generateRandomNumber from '../randomNumber.js';
+
+const answer = (num1, num2, sign) => {
+  switch (sign) {
+    case '-': {
+      return num1 - num2;
+    }
+    case '+': {
+      return num1 + num2;
+    }
+    default: {
+      return num1 * num2;
+    }
+  }
+};
 
 const playGame = () => {
   const rule = 'What is the result of the expression?';
   const questionsAndAnswers = [];
-  const randomCalculationSigns = [];
 
-  const mathSymbols = '-+*';
-
-  for (let numberTries = 0; numberTries !== 3; numberTries += 1) {
-    randomCalculationSigns.push(mathSymbols.charAt(Math.floor(Math.random() * mathSymbols.length)));
+  for (let numberTries = 0; numberTries !== timesPlayToWin; numberTries += 1) {
+    const mathSymbols = '-+*';
+    const randomIndex = Math.floor(Math.random() * mathSymbols.length);
+    const randomSign = mathSymbols.charAt(randomIndex);
     const maxNumberValue = 100;
-    let number1 = generateRandomNumber(0, maxNumberValue);
-    let number2 = generateRandomNumber(0, maxNumberValue);
-    const pairQuestionAnswer = [];
-    pairQuestionAnswer.push(`${number1} ${randomCalculationSigns[numberTries]} ${number2}`);
-    const calcSign = randomCalculationSigns[numberTries];
-    const answer = (num1, sign, num2) => {
-      let numberTypeAnswer;
-      switch (sign) {
-        case '-': {
-          numberTypeAnswer = num1 - num2;
-          break;
-        }
-        case '+': {
-          numberTypeAnswer = num1 + num2;
-          break;
-        }
-        default: {
-          numberTypeAnswer = num1 * num2;
-        }
-      }
-      return String(numberTypeAnswer);
-    };
-    pairQuestionAnswer.push(answer(number1, calcSign, number2));
-    questionsAndAnswers.push(pairQuestionAnswer);
-    number1 = 0;
-    number2 = 0;
+    const number1 = generateRandomNumber(0, maxNumberValue);
+    const number2 = generateRandomNumber(0, maxNumberValue);
+    const question = `${number1} ${randomSign} ${number2}`;
+    const calcSign = randomSign;
+    questionsAndAnswers.push([question, String(answer(number1, number2, calcSign))]);
   }
   gameLogic(rule, questionsAndAnswers);
 };
