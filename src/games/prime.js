@@ -1,18 +1,21 @@
-import { gameLogic, timesPlayToWin } from '../index.js';
+// eslint-disable-next-line import/no-named-default
+import { default as gameLogic, timesPlayToWin } from '../index.js';
 import generateRandomNumber from '../randomNumber.js';
 
-const countDividers = (num) => {
-  let result = 0;
-  for (let ifDivider = 1; ifDivider !== num + 1; ifDivider += 1) {
-    if (num % ifDivider === 0) result += 1;
+const isPrime = (num) => {
+  if (num === 2 || num === 3) return true;
+  if (num <= 1 || num % 2 === 0 || num % 3 === 0) return false;
+  for (let i = 5; (i * i) <= num; i += 6) {
+    if (num % i === 0 || num % (i + 2) === 0) {
+      return false;
+    }
   }
-  return result;
+  return true;
 };
 
-const isPrime = (num) => countDividers(num) === 2;
+const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const playGame = () => {
-  const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   const questionsAndAnswers = [];
   for (let numberTries = 0; numberTries !== timesPlayToWin; numberTries += 1) {
     const maxNumberValue = 100;

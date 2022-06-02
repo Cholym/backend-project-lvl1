@@ -1,9 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const timesPlayToWin = 3;
-
-// eslint-disable-next-line consistent-return
-const gameLogic = (rule, questionsAndAnswers) => {
+export default (rule, questionsAndAnswers) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log('Hello, %s!', userName);
@@ -15,11 +12,12 @@ const gameLogic = (rule, questionsAndAnswers) => {
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer !== answer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`);
-      return console.log(`Let's try again, ${userName}!`);
-    } console.log('Correct!');
+      console.log(`Let's try again, ${userName}!`);
+      return;
+    }
+    console.log('Correct!');
   }
   console.log(`Congratulations, ${userName}!`);
 };
 
-export { timesPlayToWin };
-export { gameLogic };
+export const timesPlayToWin = 3;
