@@ -8,11 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-<<<<<<< HEAD
-# Make data base, printed on Sat Jun  4 01:22:20 2022
-=======
-# Make data base, printed on Fri Jun  3 21:57:24 2022
->>>>>>> f01c690b555246124b74db3a88bfa802e2ddd53c
+# Make data base, printed on Mon Jun  6 23:10:12 2022
 
 # Variables
 
@@ -98,6 +94,8 @@ MAKE = $(MAKE_COMMAND)
 PATH = /home/ochab/.vscode-server/bin/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/bin/remote-cli:/home/ochab/.asdf/shims:/home/ochab/.asdf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu_2004.4.4.0_x64__79rhkp1fndgsc:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Common Files/Autodesk Shared/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Cloudflare/Cloudflare WARP/:/mnt/c/Users/Dodo/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Dodo/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/Dodo/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin
 # default
 MAKEFILES := 
+# environment
+MOTD_SHOWN = update-motd
 # automatic
 ^F = $(notdir $^)
 # environment
@@ -135,11 +133,7 @@ VSCODE_EXTHOST_WILL_SEND_SOCKET = true
 # environment
 _ = /mnt/c/Users/Dodo/AppData/Local/Programs/Microsoft VS Code/bin/code
 # environment
-<<<<<<< HEAD
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-33236b72-c49f-43aa-9edd-ea734bbe7672.sock
-=======
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-74c0ea82-98c4-4b22-a6fa-5a87d4aa15d4.sock
->>>>>>> f01c690b555246124b74db3a88bfa802e2ddd53c
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-8b9ec9db-cb24-442d-8300-36fe2a6a030f.sock
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -157,7 +151,7 @@ WSL_DISTRO_NAME = Ubuntu
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
 # variable set hash-table stats:
-# Load=68/1024=7%, Rehash=0, Collisions=2/98=2%
+# Load=69/1024=7%, Rehash=0, Collisions=2/99=2%
 
 # Pattern-specific Variable Values
 
@@ -258,10 +252,6 @@ brain-calc:
 # strcache performance: lookups = 37 / hit rate = 29%
 # hash-table stats:
 # Load=26/8192=0%, Rehash=0, Collisions=0/37=0%
-<<<<<<< HEAD
-# Finished Make data base on Sat Jun  4 01:22:20 2022
-=======
-# Finished Make data base on Fri Jun  3 21:57:24 2022
->>>>>>> f01c690b555246124b74db3a88bfa802e2ddd53c
+# Finished Make data base on Mon Jun  6 23:10:12 2022
 
  
